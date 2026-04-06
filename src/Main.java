@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+
         Author author1 = new Author("Andrew Bashchak",2006);
         Author author2 = new Author("Dmytro Svitlyk",2006);
 
@@ -14,6 +15,10 @@ public class Main {
 
         Student student = new Student("Ksenia");
         Guest guest = new Guest("Victoria");
+
+        book1.addReview(new Rating(5));
+        book1.addReview(new Rating(1));
+        book2.addReview(new Rating(4));
 
         library.addDepartment(genre1);
         library.addDepartment(genre2);
